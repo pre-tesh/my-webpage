@@ -1,4 +1,119 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
+=======
+<style>
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #beccab; /* Uses the page's main text color for bar background */
+  padding: 12px 0;
+  text-align: center;
+  z-index: 1000; /* Ensures the bar stays on top of other content */
+  font-family: 'Times New Roman', Times, serif; /* Matches page font */
+}
+
+.top-bar a {
+  color: #21241e; /* Uses the page's background color for link text */
+  margin: 0 20px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  /* font-weight: bold; */
+}
+
+.top-bar a:hover {
+  color: #ffffff; /* Brighter color on hover for better feedback */
+  text-decoration: underline;
+}
+</style>
+
+  <!-- HTML for the top bar:
+  Place the following <div class="top-bar">...</div> snippet
+  right after your opening <body> tag.
+  Replace placeholder URLs with your actual profile links. -->
+
+  <div class="top-bar">
+    <a href="blogshomepage.html">Blog</a>
+    <a href="https://www.linkedin.com/in/pr1tesh/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a href="https://x.com/PriteshRodge" target="_blank" rel="noopener noreferrer">Twitter</a>
+    <a href="https://github.com/pre-tesh" target="_blank" rel="noopener noreferrer">GitHub</a>
+  </div>
+
+  <!-- Important:
+  To prevent page content from being hidden under the fixed top bar,
+  you may need to add 'padding-top' to your <body> or main content container.
+  For example: body { padding-top: 50px; } (adjust the pixel value as needed). -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Pritesh</title>
+    <!-- Gallery Styles -->
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 16px;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        .gallery-item .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            padding: 8px;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const aboutMe = document.querySelector('.about-me');
+    aboutMe.classList.add('about-me-animate');
+    const centerText = document.querySelector('.center-text');
+    centerText.classList.add('center-text-animate');
+});
+</script>
+<style>
+.about-me {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+.about-me.about-me-animate {
+    opacity: 1;
+}
+
+.center-text {
+    filter: blur(10px);
+    opacity: 0;
+    transition: filter 2s ease, opacity 2s ease;
+}
+.center-text.center-text-animate {
+    filter: blur(0);
+    opacity: 1;
+}
+</style>
+>>>>>>> ed3c2b6 (Updated commit)
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -23,6 +138,7 @@
             min-height: 100vh;
         }
         .center-text {
+<<<<<<< HEAD
             color: #1f241a;
             font-family: 'Times New Roman', Times, serif;
             font-size: 4rem;
@@ -33,21 +149,45 @@
             margin: 40px auto 0 auto;
             color: #1f241a;
             font-size: 1.2rem;
+=======
+            color: #535d49;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 4rem;
+            text-align: center;
+            display: inline-block;
+            position: relative;
+        }  
+
+        .about-me {
+            max-width: 650px;
+            margin: 40px auto 0 auto;
+            color: #535d49;
+            font-size: 1.6rem;
+>>>>>>> ed3c2b6 (Updated commit)
             background: none;
             padding: 0;
             border-radius: 0;
             font-family: 'Times New Roman', Times, serif;
         }
+<<<<<<< HEAD
         .favourites {
             max-width: 600px;
             margin: 40px auto 0 auto;
             color: #1f241a;
             font-size: 1.2rem;
+=======
+        .currently-upto {
+            max-width: 650px;
+            margin: 40px auto 0 auto;
+            color: #535d49;
+            font-size: 1.6rem;
+>>>>>>> ed3c2b6 (Updated commit)
             background: none;
             padding: 0;
             border-radius: 0;
             font-family: 'Times New Roman', Times, serif;
         }
+<<<<<<< HEAD
     </style>
 </head>
 <body>
@@ -70,3 +210,54 @@
 
 </body>
 </html>
+=======
+        .spacer-scroll {
+            height: 120px;
+            overflow-y: auto;
+        }
+        </style>
+    </head>
+    <body>
+    <div class="center-container">
+        <div class="center-text">
+         This is Pritesh's webpage :)
+        </div>
+      </div>
+
+</script>
+    <div class="about-me">
+    <h2>About Me</h2>
+    <p>
+      Hi! I'm Pritesh, a computer science undergrad with a curiosity for how things work — especially when it comes to computers.
+      I spend my time exploring the lower levels of tech (the Linux kernel, to be specific), distro-hopping, and trying to figure out how minimalist is too minimalist for this webpage :-b
+    </p>
+    <p>
+      This is my little corner of the internet — thank you for stopping by ;))
+    </p>
+    </div>
+
+    <div class="spacer-scroll"></div>
+    <div class="spacer-scroll"></div>
+
+    <div class="currently-upto">
+      <h2>What I'm Currently Up To</h2>
+      <p>
+
+I'm currently part of the Linux Kernel Bug Fixing Mentorship , 
+diving deep into the world of kernel development. 
+It's an incredible opportunity to explore the
+ internals of the Linux kernel,
+  work under experienced maintainers like
+   Shuah Khan, and make real contributions to open source. 
+   Every line of code I touch takes me closer to understanding
+    how the system really runs — 
+    and that’s exactly where I want to .
+    <p>
+      I will  try to write blogs about the same :))
+      <a href="
+    </p>
+    <div class="spacer-scroll"></div>
+    <div class="spacer-scroll"></div>
+
+    </body>
+>>>>>>> ed3c2b6 (Updated commit)
